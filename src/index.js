@@ -4,10 +4,7 @@ import Store from './modules/storage.js';
 import User from './modules/Users.js';
 import UI from './modules/UIclass.js';
 
-// const name = document.querySelector('#username');
-// const score = document.querySelector('#score').value;
 const form = document.querySelector('#form');
-// const userInput = [];
 
 // Event : Display UsersScore
 document.addEventListener('DOMcontentLoaded', UI.displayUserScore());
@@ -17,11 +14,11 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   // console.log(e)
   // get Form values
-  const userScore = document.getElementById('score').value;
   const userName = document.getElementById('username').value;
+  const userScore = document.getElementById("score").value;
   // console.log(userName, userScore)
   // instantiate a user
-  const newUser = new User(userScore, userName);
+  const newUser = new User(userName, userScore);
 
   // Add user to UI
   UI.addUserToList(newUser);
