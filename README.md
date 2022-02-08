@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Webpack Template
+# Leaderboard Project -Structure
 
-> Set up project with webpack
+> Set up project with webpack & modular JavaScript
 
-![screenshot](Snapshot.png)
+![screenshot](snapshot-structure.png)
 
 
 ## Built With
