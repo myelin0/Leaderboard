@@ -1,7 +1,55 @@
 body {
-  background-color: bisque;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
 }
 
-.hello {
-  color: rgb(36, 44, 160);
+h1 {
+  margin: 3rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.recentScores {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#reset {
+  width: 100px;
+  height: 35px;
+  margin-left: 2rem;
+}
+
+.List {
+  border: solid black 1px;
+}
+
+/* .wrap-left{} */
+
+tr {
+  border: solid brown 1px;
+  background-color: rgb(223, 222, 222);
+}
+
+.wrap-right {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+#formBtn {
+  align-self: flex-end;
 }

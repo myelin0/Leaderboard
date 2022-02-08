@@ -10,7 +10,7 @@ export default class UI {
     // console.log(newUser)
     const list = document.querySelector('.List');
     const row = document.createElement('tr');
-    row.innerHTML = `<td>${newUser.name}: ${newUser.score}</td>`;
+    row.innerHTML = `<td>${newUser.name}  :  ${newUser.score}</td>`;
     list.appendChild(row);
   }
 

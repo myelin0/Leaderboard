@@ -1,4 +1,4 @@
-// import "./style.css";
+import './style.css';
 
 import Store from './modules/storage.js';
 import User from './modules/Users.js';
