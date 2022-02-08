@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/myelin0/create-webpack#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "css-loader": "^6.5.1",
     "style-loader": "^3.3.1",
     "webpack": "^5.67.0",
