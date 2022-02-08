@@ -15,7 +15,7 @@ form.addEventListener('submit', (e) => {
   // console.log(e)
   // get Form values
   const userName = document.getElementById('username').value;
-  const userScore = document.getElementById("score").value;
+  const userScore = document.getElementById('score').value;
   // console.log(userName, userScore)
   // instantiate a user
   const newUser = new User(userName, userScore);
