@@ -12,9 +12,7 @@ export default class Store {
 
   static addUser(newUser) {
     const user = Store.getUser();
-    console.log(user);
     user.push(newUser);
-    console.log(user);
     localStorage.setItem('user', JSON.stringify(user));
   }
 }

@@ -3,8 +3,4 @@ export default class User {
     this.name = name;
     this.score = score;
   }
-
-  // updateScore(){
-  //   this.score++
-  // }
 }
