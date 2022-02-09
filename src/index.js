@@ -1,14 +1,18 @@
-import _ from "lodash";
-import "./style.css";
+import './style.css';
 
-function component() {
-  const element = document.createElement("div");
+import Store from './modules/storage.js';
+import User from './modules/Users.js';
+import UI from './modules/UIclass.js';
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(["Hello", "webpack"], " ");
-  element.classList.add('hello');
+const form = document.querySelector('#form');
+document.addEventListener('DOMcontentLoaded', UI.displayUserScore());
 
-  return element;
-}
-
-document.body.appendChild(component());
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const userName = document.getElementById('username').value;
+  const userScore = document.getElementById('score').value;
+  const newUser = new User(userName, userScore);
+  UI.addUserToList(newUser);
+  Store.addUser(newUser);
+  UI.clearFields();
+});
