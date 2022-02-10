@@ -28,11 +28,12 @@ main {
 
 .List {
   border: solid black 1px;
+  width: 50%;
 }
 
-tr {
-  border: solid brown 1px;
-  background-color: rgb(223, 222, 222);
+li:nth-child(even) {
+  background-color: #f2f2f2;
+  list-style: none;
 }
 
 .wrap-right {
