@@ -7,44 +7,34 @@ const List = document.querySelector('.List');
 const refreshBtn = document.querySelector('#refreshBtn');
 
 const addScore = async () => {
-  try {
-    const response = await fetch(
-      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/2bBA0QuDAZYPN668fbO9/scores/',
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          user: userName,
-          score: userScore,
-        }),
+  await fetch(
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/2bBA0QuDAZYPN668fbO9/scores/',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
       },
-    );
-    const data = await response.json();
-  } catch (error) {
-    console.log(error);
-  }
+      body: JSON.stringify({
+        user: userName,
+        score: userScore,
+      }),
+    },
+  );
 };
 
 const getScore = async () => {
-  try {
-    const response = await fetch(
-      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/2bBA0QuDAZYPN668fbO9/scores/',
-    );
-    const data = await response.json();
-    const parsedData = data.result;
-    const sortedScores = parsedData.sort((a, b) => b.score - a.score);
+  const response = await fetch(
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/2bBA0QuDAZYPN668fbO9/scores/',
+  );
+  const data = await response.json();
+  const parsedData = data.result;
+  const sortedScores = parsedData.sort((a, b) => b.score - a.score);
 
-    let scoreHTML = '';
-    sortedScores.forEach((el) => {
-      scoreHTML
-    += `<li>${el.user}  :  ${el.score}</li>`;
-    });
-    List.innerHTML = scoreHTML;
-  } catch (error) {
-    console.log(error);
-  }
+  let scoreHTML = '';
+  sortedScores.forEach((el) => {
+    scoreHTML += `<li>${el.user}  :  ${el.score}</li>`;
+  });
+  List.innerHTML = scoreHTML;
 };
 
 getScore();

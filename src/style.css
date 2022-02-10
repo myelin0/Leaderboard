@@ -29,20 +29,21 @@ main {
 .List {
   border: solid black 1px;
   width: 100%;
-  padding:5px;
+  padding: 5px;
 }
 
-li{
-list-style: none;
+li {
+  list-style: none;
 }
+
 li:nth-child(even) {
   background-color: #f2f2f2;
-  
 }
 
-.wrap-left{
-  width:50%;
+.wrap-left {
+  width: 50%;
 }
+
 .wrap-right {
   display: flex;
   justify-content: flex-start;
