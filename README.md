@@ -1,11 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard Project -Structure
+# Leaderboard Project
 
-> Set up project with webpack & modular JavaScript
-
-![screenshot](snapshot-structure.png)
-
+> Set up project with webpack & modular JavaScript sending and receiving data from/to the Leaderboard API.
 
 ## Built With
 
@@ -19,6 +16,7 @@ after cloning
 npm install
 npm start
 ```
+
 ## Authors
 
 👤 **Emirjeta Veisllari**
@@ -26,6 +24,7 @@ npm start
 - GitHub: [@myelin0](https://github.com/myelin0)
 - Twitter: [@Amy_Albania](https://twitter.com/Amy_albania)
 - LinkedIn: [@Emirjeta Veisllari](https://www.linkedin.com/in/emirjeta-veisllari/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
