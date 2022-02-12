@@ -6,9 +6,6 @@ body {
   background-image: url('/assets/patrick-tomasso-QMDap1TAu0g-unsplash.jpg');
   background-repeat: no-repeat;
   object-fit: cover;
-
-  /* background-color: #151b29;
-  background-color:#2a0e2b; */
 }
 
 main {
@@ -35,8 +32,6 @@ main {
   border: solid black 1px;
   width: 100%;
   padding: 5px;
-
-  /* background-color: rgba(15, 43, 14, 0.9); */
   background-color: #0383aa;
 }
 
