@@ -3,6 +3,7 @@
 # Leaderboard Project
 
 > Set up project with webpack & modular JavaScript sending and receiving data from/to the Leaderboard API.
+![screenshot](/assets/bg.png)
 
 ## Built With
 
@@ -16,7 +17,8 @@ after cloning
 npm install
 npm start
 ```
-
+Submit your name and score &
+click the refresh button for your name to appear in the list.
 ## Authors
 
 👤 **Emirjeta Veisllari**
@@ -37,9 +39,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+Photo by <a href="https://unsplash.com/@impatrickt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick Tomasso</a> on <a href="https://unsplash.com/s/photos/cover-photo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
 ## 📝 License
 
