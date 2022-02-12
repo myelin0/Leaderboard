@@ -1,10 +1,14 @@
-body {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 16px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-h1 {
-  margin: 3rem;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  background-image: url('/assets/patrick-tomasso-QMDap1TAu0g-unsplash.jpg');
+  background-repeat: no-repeat;
+  object-fit: cover;
+
+  /* background-color: #151b29;
+  background-color:#2a0e2b; */
 }
 
 main {
@@ -27,21 +31,35 @@ main {
 }
 
 .List {
+  mix-blend-mode: normal;
   border: solid black 1px;
   width: 100%;
   padding: 5px;
+
+  /* background-color: rgba(15, 43, 14, 0.9); */
+  background-color: #0383aa;
 }
 
 li {
   list-style: none;
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  padding: 6px 4px;
+  color: white;
 }
 
 li:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+li:nth-child(-n+3) {
+  color: rgba(166, 255, 0, 0.788);
+  font-size: 1em;
+  font-weight: bold;
 }
 
 .wrap-left {
-  width: 50%;
+  width: 40%;
 }
 
 .wrap-right {
@@ -59,4 +77,56 @@ form {
 
 #formBtn {
   align-self: flex-end;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.623);
+}
+
+#refreshBtn,
+#formBtn {
+  color: #151b29;
+  border: 2px solid;
+  padding: 4px 8px;
+  font-size: 1em;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #151b29;
+  color: white;
+  transform: translateY(-0.25em);
+}
+
+input.focus {
+  border-color: rgba(255, 255, 255, 0.13);
+}
+
+h1 {
+  font-size: 3em;
+  margin: 3rem;
+}
+
+h3 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
