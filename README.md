@@ -5,6 +5,10 @@
 > Set up project with webpack & modular JavaScript sending and receiving data from/to the Leaderboard API.
 ![screenshot](/assets/bg.png)
 
+## Live Link
+
+In the following link, you can view the [Leaderboard Project](https://myelin0.github.io/Leaderboard/)
+
 ## Built With
 
 -Javascript
